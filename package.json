@@ -1,9 +1,11 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "dist/const.min.js",
+  "main2": "dist/const.min.js",
+  "main": "src/const.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "uglifyjs src/const.js -c -m --warn --output dist/const.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +16,9 @@
     "safe",
     "global"
   ],
+  "engines": {
+    "node": ">=6.17.0"
+  },
   "author": "Marcin Polak mapoart@gmail.com",
   "license": "MIT",
   "dependencies": {
