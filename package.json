@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main2": "dist/const.min.js",
   "main": "src/const.js",

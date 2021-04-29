@@ -8,6 +8,13 @@ Constants in JavaScript (global, objects)
 npm i @nexssp/const
 ```
 
+```js
+nConst("MYCONST", "VALUE EVERYWERE"); // you cannot change it.
+
+// You can use MYCONST everywere after nConst("MYCONST",...)
+MYCONST = 1; // will terminate program with the message as below
+```
+
 ## Usage
 
 Let say you have some kind of config file.

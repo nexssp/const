@@ -1,5 +1,4 @@
 const { red, bold, green, yellow } = require("@nexssp/ansi");
-Object.freeze(cliArgs);
 
 const handler = (displayName, value) => ({
   set: function (v) {
