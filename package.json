@@ -1,0 +1,25 @@
+{
+  "name": "@nexssp/const",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/const.min.js",
+  "scripts": {
+    "build": "uglifyjs src/const.js -c -m --warn --output dist/const.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "helper",
+    "debugger",
+    "object",
+    "safe",
+    "trace"
+  ],
+  "author": "Marcin Polak mapoart@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@nexssp/ansi": "^1.0.7"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.13.4"
+  }
+}
