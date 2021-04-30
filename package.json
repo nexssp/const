@@ -1,9 +1,12 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.4",
-  "description": "",
-  "main2": "dist/const.min.js",
-  "main": "src/const.js",
+  "version": "1.0.6",
+  "description": "Global and Object constants the easy way.",
+  "main": "dist/const.min.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://nexss.com",
   "scripts": {
     "prepublish": "npm run build",
     "build": "uglifyjs src/const.js -c -m --warn --output dist/const.min.js",
@@ -16,6 +19,14 @@
     "safe",
     "global"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nexssp/const.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexssp/const/issues",
+    "email": "mapoart@gmail.com"
+  },
   "engines": {
     "node": ">=6.17.0"
   },
@@ -26,5 +37,15 @@
   },
   "devDependencies": {
     "uglify-js": "^3.13.4"
-  }
+  },
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/paypalme/mapoart"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/nexssp/cli?sponsor=1"
+    }
+  ]
 }
