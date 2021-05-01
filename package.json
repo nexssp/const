@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Global and Object constants the easy way.",
   "main": "dist/const.js",
   "files": [
