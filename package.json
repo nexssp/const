@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Global and Object constants the easy way.",
   "main": "dist/const.js",
   "files": [
@@ -9,7 +9,7 @@
   "homepage": "https://nexss.com",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "nexssp-min",
+    "build": "npx @nexssp/min@1.0.6",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -45,8 +45,5 @@
       "type": "github",
       "url": "https://github.com/nexssp/cli?sponsor=1"
     }
-  ],
-  "devDependencies": {
-    "@nexssp/min": "^1.0.6"
-  }
+  ]
 }
