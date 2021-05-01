@@ -1,10 +1,10 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Global and Object constants the easy way.",
   "main": "dist/const.js",
   "files": [
-    "dist/**/*"
+    "dist/const.js"
   ],
   "homepage": "https://nexss.com",
   "scripts": {
@@ -34,7 +34,6 @@
   "license": "MIT",
   "dependencies": {
     "@nexssp/ansi": "^1.0.7",
-    "@nexssp/min": "^1.0.6",
     "@nexssp/stack": "^1.0.6"
   },
   "funding": [
@@ -46,5 +45,8 @@
       "type": "github",
       "url": "https://github.com/nexssp/cli?sponsor=1"
     }
-  ]
+  ],
+  "devDependencies": {
+    "@nexssp/min": "^1.0.6"
+  }
 }
