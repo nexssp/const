@@ -1,15 +1,15 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Global and Object constants the easy way.",
-  "main": "dist/const.min.js",
+  "main": "dist/const.js",
   "files": [
     "dist/**/*"
   ],
   "homepage": "https://nexss.com",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "uglifyjs src/const.js -c -m --warn --output dist/const.min.js",
+    "build": "nexssp-min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -33,10 +33,9 @@
   "author": "Marcin Polak mapoart@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@nexssp/ansi": "^1.0.7"
-  },
-  "devDependencies": {
-    "uglify-js": "^3.13.4"
+    "@nexssp/ansi": "^1.0.7",
+    "@nexssp/min": "^1.0.6",
+    "@nexssp/stack": "^1.0.6"
   },
   "funding": [
     {

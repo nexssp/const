@@ -1,9 +1,9 @@
 const { red, bold, green, yellow } = require("@nexssp/ansi");
-
+const { stack } = require("@nexssp/stack");
 const handler = (displayName, value) => ({
   set: function (v) {
+    stack(bold("PROGRAM TERMINATED:"), 1, 2);
     console.error(
-      red(bold("\nPROGRAM TERMINATED:")),
       green(
         ` ${bold(displayName)} is a ${yellow(
           bold("constant")
