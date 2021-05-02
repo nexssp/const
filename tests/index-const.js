@@ -1,5 +1,7 @@
 const { myConfig } = require("./config");
 
+console.log(myConfig);
+
 process.MYCONST = 369;
 myConfig.MyObjectCONST = 999999;
 

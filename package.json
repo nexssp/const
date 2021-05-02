@@ -1,8 +1,8 @@
 {
   "name": "@nexssp/const",
-  "version": "1.0.10",
-  "description": "Global and Object constants the easy way.",
-  "main": "dist/const.js",
+  "version": "1.0.11",
+  "description": "Global and Object constants the easy way. NEW: hidden constant.",
+  "main": "src/const.js",
   "files": [
     "dist/const.js"
   ],
@@ -34,7 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "@nexssp/ansi": "^1.1.1",
-    "@nexssp/stack": "^1.0.7"
+    "@nexssp/stack": "^1.0.8"
   },
   "funding": [
     {
