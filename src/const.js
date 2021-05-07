@@ -1,5 +1,11 @@
 const { red, bold, green, yellow } = require("@nexssp/ansi");
 const { stack } = require("@nexssp/stack");
+const nContants = Symbol("nConstants");
+
+// We create object to keep all constants
+// (Just to list them if needed)
+if (!global[nContants]) global[nContants] = [];
+
 const handler = (displayName, value, hidden = false) => ({
   set: function (v) {
     stack(bold("PROGRAM TERMINATED:"), 1, 2);
@@ -21,13 +27,16 @@ const handler = (displayName, value, hidden = false) => ({
   configurable: false,
 });
 
-const nConst = (name, value, where = global, hidden) => {
+const nConst = (name, value, where = global, hidden = false) => {
+  global[nContants].push({ name, value, hidden, where: typeof where });
   Object.defineProperty(where, name, handler(`${name}`, value, hidden));
   return { name: value };
 };
+
+const getConstants = () => global[nContants];
 
 const hConst = (name, value, where = global) => {
   return nConst(name, value, where, true);
 };
 
-module.exports = { nConst, hConst };
+module.exports = { nConst, hConst, getConstants };

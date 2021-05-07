@@ -1,5 +1,6 @@
 # @nexssp/const
 
+- **NEW 1.0.13** - function which list the defined constants: **getConstants()**
 - **NEW 1.0.11** - now 2 functions **nConst** and **hConst**. hConst will be hidden. So when the for example `Object.keys` will be used will not be displayed however constant is there.
 - **NEW 1.0.10** - now with stack display..
 
@@ -34,6 +35,8 @@ nConst("MYCONST", "some value", process);
 nConst("MYCONST2", "OLD CONSTANT VALUE");
 
 hConst("MYCONST3_HIDDEN", "Hidden Constant", myConfig); // NEW! hConst-> Will to been seen on Object.keys etc.
+
+console.log(getConstants()); // Will display defined constants
 
 const myConfig = {};
 nConst("MyObjectCONST", "My old object const", myConfig);

@@ -1,6 +1,6 @@
 const { myConfig } = require("./config");
-
-console.log(myConfig);
+const { getConstants } = require("../src/const");
+console.log(getConstants());
 
 process.MYCONST = 369;
 myConfig.MyObjectCONST = 999999;
